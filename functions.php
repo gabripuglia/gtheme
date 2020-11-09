@@ -57,5 +57,7 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	'gTheme'
 );
 
+$myUpdateChecker->getVcsApi()->enableReleaseAssets();
+
 
  ?>
