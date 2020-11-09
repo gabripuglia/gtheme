@@ -50,11 +50,11 @@ require get_template_directory() . '/inc/gutenberg.php';
  * Add Updater
  */
 
-require 'path/to/plugin-update-checker/plugin-update-checker.php';
+require 'http://localhost/sviluppo-web/wp-content/plugins/plugin-update-checker-4.10/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'http://example.com/path/to/details.json',
+	'http://localhost/sviluppo-web/wp-content/plugins/plugin-update-checker-4.10/examples/theme.json',
 	__FILE__, //Full path to the main plugin file or functions.php.
-	'unique-plugin-or-theme-slug'
+	'gTheme'
 );
 
 
