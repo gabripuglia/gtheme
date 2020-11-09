@@ -46,5 +46,16 @@ add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
 
 require get_template_directory() . '/inc/gutenberg.php';
 
+/**
+ * Add Updater
+ */
+
+require 'path/to/plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'http://example.com/path/to/details.json',
+	__FILE__, //Full path to the main plugin file or functions.php.
+	'unique-plugin-or-theme-slug'
+);
+
 
  ?>
