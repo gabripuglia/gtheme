@@ -7,6 +7,7 @@
         while (have_posts()) :
           the_post();
           the_content();
+		  echo 'RELEASE 1.1';
         endwhile;
       endif;?>
   </section>
